@@ -22,8 +22,8 @@
         <div class="row">
             @foreach($products as $product)
                 <div class="col-md-4">
-                    <?php  $property_images = explode('|',$product->images);?>
-                    <img src="{{ asset(''. $property_images[0]) }}" class="img-fluid w-100" style="height:300px;" alt="">
+                    <?php  $property_images = json_decode($product->images);?>
+                    <img src="{{ asset('/product_images/'. $property_images[0]) }}" class="img-fluid w-100" style="height:300px;" alt="">
                 </div>
             @endforeach
         </div>

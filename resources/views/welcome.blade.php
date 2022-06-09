@@ -33,63 +33,46 @@
 
   
             <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h2>About</h2>
-                    <h3>Find Out More <span>About Us</span></h3>
-                    <p>Adova Pharmaceuticals Limited is one of the fastest growing manufacturer of Animal Health Care
-                        products under Pharmaceuticals sector in Bangladesh.</p>
-                </div>
-
                 <div class="row">
-                    <div class="col-lg-6" data-aos="zoom-out" data-aos-delay="100">
+                    <div class="col-lg-4" data-aos="zoom-out" data-aos-delay="100">
                         <img src="{{asset('assets/img/about.jpg')}}" class="img-fluid" alt="">
                     </div>
-                    <div class="col-lg-6 pt-4 pt-lg-0 content d-flex flex-column justify-content-center"
+                    <div class="col-lg-8 pt-lg-0 content d-flex flex-column justify-content-center"
                         data-aos="fade-up" data-aos-delay="100">
-                        <h3>Values</h3>
-                        <p class="font-italic">
-                            We are committed to serve for animal kind. At Adova, we do things passionately to help
-                            animal live healthier and happier.
+                        <h3>History and Growth</h3>
+                       <p>Adova is the trend setter in different business sectors in Bangladesh. In future Adova will one of the leading group of companies in the country which includes business of health care, pharmaceuticals, nutrition, financial etc. However the core of Adova Company lies in health care services. 4-5 years back there was no comprehensive treatment facilities in the country. It was very difficult to have the medicine for a distressed patients from a remote area in Bangladesh.
+                        The lack of quality treatment and the sufferings of the patients inspired the visionary leader Md. Labu Mia to set a new trend in treatment for animal husbandry. As a result Adova Pharmaceuticals Limited was established with the belief that a cure is the result of an accurate diagnosis. At that time there was not much option for animal husbandry. Adova Pharmaceuticals Limited unfolded a new horizon of animal treatment for veterinary sectors.
                         </p>
-                        <ul>
-                            <li>
-                                <i class="bx bx-store-alt"></i>
-                                <div>
-                                    <h5>Integrity</h5>
-                                    <p>We make every effort to ensure highest level of integrity in doing business. We
-                                        treat honesty, truth and fairness as the building block of our entrepreneurship.
-                                    </p>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="bx bx-images"></i>
-                                <div>
-                                    <h5>Excellence</h5>
-                                    <p>We continuously strive to achieve highest possible standard in every activities
-                                        and in the quality of products and services we provide. We believe attaining
-                                        excellence is an endless journey and our journey for excellence will never be
-                                        ended.</p>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="bx bx-images"></i>
-                                <div>
-                                    <h5>Respect for individuals</h5>
-                                    <p>We foster an environment that built on openness, transparency, mutual respect,
-                                        individual’s integrity. We treat people how we want to be treated. We care all
-                                        individuals whom we touch or to be touched: customers, employees, partners,
-                                        suppliers and communities..</p>
-                                </div>
-                            </li>
-                        </ul>
                     </div>
                 </div>
 
                
             </div>
       
-
+            <div class="container-fluid py-5">
+                <h2 class="section-title position-relative text-uppercase mx-xl-5 mb-4">
+                    <span class="bg-secondary pr-3">UPCOMING PRODUCTS</span></h2>
+                <div class="row px-xl-5">
+                    <div class="col">
+                        <div class="owl-carousel related-carousel">
+                            @foreach($uproducts as $key=>$product)
+                            <div class="product-item bg-light" onclick="location.href='/f/products/{{$product->id}}';" style="cursor:pointer;">
+                                <?php  $property_images = json_decode($product->images);?>
+                                <div class="product-img position-relative overflow-hidden">
+                                <img src="{{ asset('/product_images/'. $property_images[0]) }}" class="img-fluid" style="height:300px;" alt="">  
+                                    
+                                </div>
+                                <div class="text-center py-4">
+                                    <a class="h6 text-decoration-none text-truncate" href="">{{$product->name}}</a>
+                                
+                                </div>
+                            </div>
+                            @endforeach
+                        </div>
+                    </div>
+                </div>
+                </div>
+           
 
         <!-- ======= Counts Section ======= -->
        
@@ -146,64 +129,7 @@
       
 
 
-        <!-- ======= Team Section ======= -->
-        <section id="team" class="team section-bg">
-            <div class="container" data-aos="fade-up">
-
-                <div class="section-title">
-                    <h2>Management</h2>
-                    <h3>Our Hardworking <span>Members</span></h3>
-                </div>
-
-                <div class="row">
-
-
-                    @foreach($teams as $team)
-                    @if($team->image==='https://via.placeholder.com/600')
-                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-                        <div class="member">
-                            <div class="member-img">
-                                <img src="https://via.placeholder.com/600" class="img-fluid" style="height:120px" alt="">
-                                <div class="social">
-                                    
-                                    <a href="https://www.facebook.com/adovapharma/" target="_blank"><i class="icofont-facebook"></i></a>
-                                    
-                                    <a href="https://www.linkedin.com/company/adova-pharmaceuticals-ltd/" target="_blank"><i class="icofont-linkedin"></i></a>
-                                </div>
-                            </div>
-                            <div class="member-info">
-                                <h4>{{$team->name}}</h4>
-                                <span>{{$team->des}}</span>
-                                <span>{{$team->email}}</span>
-                            </div>
-                        </div>
-                    </div>
-                    @else
-                    <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-                        <div class="member">
-                            <div class="member-img mx-auto">
-                                <img src="{{URL::asset('teamimg')}}/{{$team->image}}"  style="height:180px;width:250px;" alt="">
-                                <div class="social">
-                                    <a href="#"><i class="icofont-twitter"></i></a>
-                                    <a href="#"><i class="icofont-facebook"></i></a>
-                                    <a href="#"><i class="icofont-instagram"></i></a>
-                                    <a href="#"><i class="icofont-linkedin"></i></a>
-                                </div>
-                            </div>
-                            <div class="member-info">
-                                <h4>{{$team->name}}</h4>
-                                <span>{{$team->des}}</span>
-                                <span>{{$team->email}}</span>
-                            </div>
-                        </div>
-                    </div>
-                    @endif
-                    @endforeach
-
-                </div>
-
-            </div>
-        </section><!-- End Team Section -->
+   
 
         <!-- ======= Contact Section ======= -->
         <section id="contact" class="contact">

@@ -29,9 +29,9 @@ Route::get('/', function () {
     $categories= Category::get();
     $sliders = Slider::get();
     $teams = Team::get();
-   
+    $uproducts=Product::where('type','=','upcoming')->paginate(5);
     $products=Product::where('type','=','recent')->paginate(5);
-    return view('welcome',compact('sliders','categories','products','settings','teams','products'));
+    return view('welcome',compact('sliders','categories','products','settings','teams','products','uproducts'));
 });
 Route::get('/f/contact', function(){
   $settings= Settings::get();
