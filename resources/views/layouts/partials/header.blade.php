@@ -38,7 +38,7 @@
                         <ul>
                             <li><a href="/f/what-we-do" style="text-decoration:none;">What we do</a></li>
                             <li><a href="/f/who-we-are" style="text-decoration:none;">Who we are</a></li>
-
+                            <li><a href="/f/profile" style="text-decoration:none;">Company Profile</a></li>
                         </ul>
                     </li>
                     
@@ -51,7 +51,14 @@
                             
                         </ul>
                     </li>
-                    
+                    <li class="drop-down"><a href="{{route('f.product')}}" style="text-decoration:none;">Facilities</a>
+                        <ul>
+                            <li class="drop-down"><a href="/f/manufacturing" style="text-decoration:none;">Manufacturing</a>
+                            </li>  
+                            <li class="drop-down"><a href="/f/qa" style="text-decoration:none;">Quality Assurance</a>
+                            </li>  
+                        </ul>
+                    </li>
                     <li><a href="/f/team" style="text-decoration:none;">Management</a></li>
                     <li><a href="/f/gallery" style="text-decoration:none;">Gallery</a></li>
                     <li><a href="/f/contact" style="text-decoration:none;">Contact</a></li>

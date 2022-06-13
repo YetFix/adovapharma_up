@@ -58,6 +58,24 @@ Route::get('/f/who-we-are', function(){
   $teams = Team::get();
   return view('who',compact('settings','categories','teams'));
 });
+Route::get('/f/profile', function(){
+  $settings= Settings::get();
+  $categories= Category::get();
+
+  return view('profile',compact('settings','categories'));
+});
+Route::get('/f/manufacturing', function(){
+  $settings= Settings::get();
+  $categories= Category::get();
+
+  return view('manufacturing',compact('settings','categories'));
+});
+Route::get('/f/qa', function(){
+  $settings= Settings::get();
+  $categories= Category::get();
+
+  return view('qa',compact('settings','categories'));
+});
 Route::get('/f/what-we-do', function(){
   $settings= Settings::get();
   $categories= Category::get();

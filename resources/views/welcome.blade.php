@@ -40,7 +40,7 @@
                     <div class="col-lg-8 pt-lg-0 content d-flex flex-column justify-content-center"
                         data-aos="fade-up" data-aos-delay="100">
                         <h3>History and Growth</h3>
-                       <p>Adova is the trend setter in different business sectors in Bangladesh. In future Adova will one of the leading group of companies in the country which includes business of health care, pharmaceuticals, nutrition, financial etc. However the core of Adova Company lies in health care services. 4-5 years back there was no comprehensive treatment facilities in the country. It was very difficult to have the medicine for a distressed patients from a remote area in Bangladesh.
+                       <p><b>Adova Pharmaceuticals Limited</b> is the trend setter in different business sectors in Bangladesh. In future Adova will one of the leading group of companies in the country which includes business of health care, pharmaceuticals, nutrition, financial etc. However the core of Adova Company lies in health care services. 4-5 years back there was no comprehensive treatment facilities in the country. It was very difficult to have the medicine for a distressed patients from a remote area in Bangladesh.
                         The lack of quality treatment and the sufferings of the patients inspired the visionary leader Md. Labu Mia to set a new trend in treatment for animal husbandry. As a result Adova Pharmaceuticals Limited was established with the belief that a cure is the result of an accurate diagnosis. At that time there was not much option for animal husbandry. Adova Pharmaceuticals Limited unfolded a new horizon of animal treatment for veterinary sectors.
                         </p>
                     </div>

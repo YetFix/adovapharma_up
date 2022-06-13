@@ -47,7 +47,7 @@
                     <div class="col-lg-6 ">
                         <iframe class="mb-4 mb-lg-0"
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3647.4929043772927!2d90.300804!3d23.907594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c31b2f7c9c6d%3A0x9668b0389c17f031!2sAdova%20Pharmaceuticals%20Limited!5e0!3m2!1sen!2sbd!4v1653906436633!5m2!1sen!2sbd"
-                            frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+                            frameborder="0" style="border:0; width: 100%; height: 300px;" allowfullscreen></iframe>
                     </div>
 
                     <div class="col-lg-6">
